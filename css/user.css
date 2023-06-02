@@ -1,0 +1,129 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  html{
+    background-color: #293039 ;
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    padding: 20px;
+    background-color:  #293039;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+  ul {
+    padding-left: .3em;
+  }
+  
+  h1, h2, p {
+    margin: 0 0 .8em 0;
+  }
+ 
+  .sidebar li{
+    list-style: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .sidebar a{
+    color: rgb(0, 0, 0);
+  
+    text-decoration: none;
+  
+    letter-spacing: 3px;
+  
+    font-weight: bold;
+  
+    font-size: 14px;
+  
+    padding: 14px 16px;
+  }
+  .sidebar li a:hover {
+  
+    background-color: #c2c2c2;
+  
+  }
+  
+  .sidebar li a.active {
+  
+    background-color: #00C2CB;
+  
+  }
+  .container {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 7px;
+  }
+  
+  .header {
+    font-size: 2em;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .container > * {
+    background-color: #00C2CB;
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 16px;
+  }
+  
+  .footer {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  
+  @media (max-width: 800px) {
+    .container {
+      grid-template-columns: none;
+    }
+  }
+  input[type="email"],[type="text"]{
+    border-radius: 25px;
+  padding: 20px;
+  width: 200px;
+
+  
+  }
+  input[type="text1"]{
+    width:75px;
+  }
+  textarea{
+    border-radius: 25px;
+    padding: 20px;
+    height:auto;
+    font-family: "Montserrat", sans-serif;
+  }
+  input[type="submit"]{
+    border-radius: 25px;
+    padding: 10px;
+    width: 100px;
+    background:rgb(192, 243, 175);
+    font-weight: bold;
+  }
+  table, th, td {
+    border: 2px solid black;
+    border-collapse:collapse;
+    background-color: rgb(177, 241, 241);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bold;
+    
+  }
+  p{
+    background-color: rgb(177, 241, 241);
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+    
+  }
+  

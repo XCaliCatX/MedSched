@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css" />
+    
+    </head>
+    <body>
+        <nav>
+            <div class = "heading">
+                <h4><a class="title" href="home.html">Med-Sched</a></h4>
+            </div>
+            <ul class = "nav-links">
+                <li><a class = "active" href = "home.php">Home</a></li>
+                <li><a class = "active" href = "signup.html">Sign Up</a></li>
+                <li><a class = "active" href = "login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div>
+        <div class = "body-text">
+            <p>&nbsp;</p> 
+        </div>
+        
+        <div><center>
+            <form action = "newuser.php" method="post">
+            <div>
+                <p>&nbsp;</p>
+                
+                <p><b>Select Account Type</b></p>
+                <p>&nbsp;</p> 
+                
+                <label for="Doctor">Doctor:</label>
+                <input type="checkbox" id="Doctor" name = "type" value="Doctor" checked onclick="onlyOne(this)">
+                <label for="Provider">Provider: </label>
+                <input type="checkbox" id="Provider" name = "type" value= "Provider" onclick="onlyOne(this)">
+            
+                <p>&nbsp;</p> 
+            </div>
+            <b>Enter Information Below</b>
+            <p>&nbsp;</p>
+            <div>
+                <input type = "email" placeholder="Enter Email" name = "email" required>
+            </div>
+            <div>
+                <input type = "text" placeholder="First Name" name = "fName" required>
+            </div>
+            <div>
+                <input type = "text" placeholder="Last Name" name = "lName" required>
+            </div>
+            <div>
+                <input type = "text" placeholder="Specialty" name = "Specialty" required>
+            </div>
+            <div>
+                <input type = "text" placeholder="Location" name = "Location" required>
+            </div>
+            <div>
+                <input type = "text" placeholder="Phone Number" name = "Contact" required>
+            </div>
+            <div>
+                <input type = "text" placeholder="Company" name = "Company" required>
+            </div>
+            <div>
+                <input type = "password" placeholder="Password" name = "Password" required>
+            </div>
+            <div>
+                <p><b>Availability:</b></p>
+            </div>
+            <div>
+                <label for="Mon">Monday:</label> 
+                <input type="checkbox" id="Mon" name="Mon" value="on" onclick="myFunctionMon()">
+                <p id="textMST" style="display:none">Start Time:</p>
+                <input style = "display:none" type="time" id="MonST" name="MonST">
+                <p id="textMET" style="display:none">End Time:</p>
+                <input style ="display:none" type="time" id="MonET" name="MonET">
+            </div>
+            <div>
+                <label for="Tues">Tuesday:</label> 
+                <input type="checkbox" id="Tues" name="Tues" onclick="myFunctionTues()">
+                <p id="textTST" style="display:none">Start Time:</p>
+                <input style = "display:none" type="time" id="TuesST" name="TuesST" >
+                <p id="textTET" style="display:none">End Time:</p>
+                <input style ="display:none" type="time" id="TuesET" name="TuesET" >
+            </div>
+            <div>
+                <label for="Weds">Wednesday:</label> 
+                <input type="checkbox" id="Weds" name="Weds" onclick="myFunctionWed()">
+                <p id="textWST" style="display:none">Start Time:</p>
+                <input style = "display:none" type="time" id="WedST" name="WedST">
+                <p id="textWET" style="display:none">End Time:</p>
+                <input style ="display:none" type="time" id="WedET" name="WedET" >
+            </div>
+            <div>
+                <label for="Thurs">Thursday:</label> 
+                <input type="checkbox" id="Thurs" name="Thurs" onclick="myFunctionThurs()">
+                <p id="textThST" style="display:none">Start Time:</p>
+                <input style = "display:none" type="time" id="ThST" name="ThST">
+                <p id="textThET" style="display:none">End Time:</p>
+                <input style ="display:none" type="time" id="ThET" name="ThET">
+            </div>
+            <div>
+                <label for="Fri">Friday:</label> 
+                <input type="checkbox" id="Fri" name="Fri" onclick="myFunctionFri()">
+                <p id="textFST" style="display:none">Start Time:</p>
+                <input style = "display:none" type="time" id="FST" name="FST" >
+                <p id="textFET" style="display:none">End Time:</p>
+                <input style ="display:none" type="time" id="FET" name="FET">
+            </div>
+            <div>
+                <label for="Sat">Saturday:</label> 
+                <input type="checkbox" id="Sat" value="on" name="Sat" onclick="myFunctionSat()">
+                <p id="textSatST" style="display:none">Start Time:</p>
+                <input style = "display:none" type="time" id="SatST" name="SatST" >
+                <p id="textSatET" style="display:none">End Time:</p>
+                <input style ="display:none" type="time" id="SatET" name="SatET" >
+            </div>
+            <div>
+                <label for="Sun">Sunday:</label> 
+                <input type="checkbox" id="Sun" name = "Sun" onclick="myFunctionSun()">
+                <p id="textSunST" style="display:none">Start Time:</p>
+                <input style = "display:none" type="time" id="SunST" name="SunST">
+                <p id="textSunET" style="display:none">End Time:</p>
+                <input style ="display:none" type="time" id="SunET" name="SunET" >
+            </div>
+            <div>
+                <input type = "submit" name = "submit" value="Submit" href="newuser.php">
+            </div>
+        </form>
+
+        <script type="text/javascript" src="js/sign-up.js"></script>
+
+        </center></div></div>
+    </body>
+</html>
